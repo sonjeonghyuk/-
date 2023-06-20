@@ -3,10 +3,10 @@ import java.util.*;
 public class Solution {
     public int solution(int n) {
         int answer = 0;
-        String  s = Integer.toString(n);
+        String[] str = String.valueOf(n).split("");
 
-        for(int i=0; i<s.length(); i++) {
-            answer += Integer.parseInt(s.substring(i,i+1));
+        for (int i=0; i<str.length; i++) {
+            answer += Integer.parseInt(str[i]);
         }
 
         return answer;
