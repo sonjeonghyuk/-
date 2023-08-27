@@ -1,7 +1,6 @@
 class Solution {
     public String solution(String myString) {
-        String answer = "";
-        answer = myString.toUpperCase();
+        String answer = myString.toUpperCase();
         return answer;
     }
 }
