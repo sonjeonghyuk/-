@@ -1,16 +1,16 @@
 class Solution {
     public int solution(int n, String control) {
         int answer = 0;
-        StringBuilder sb = new StringBuilder();
-        sb.append(control);
-        for (int i = 0; i < sb.length(); i++) {
-            if (sb.charAt(i) == 'w'){
+        String[] str = control.split("");
+        
+        for (String s : str) {
+            if (s.equals("w")) {
                 n += 1;
-            } else if (sb.charAt(i) == 's') {
+            } else if (s.equals("s")) {
                 n -= 1;
-            } else if (sb.charAt(i) == 'd') {
+            } else if (s.equals("d")) {
                 n += 10;
-            } else if (sb.charAt(i) == 'a') {
+            } else if (s.equals("a")) {
                 n -= 10;
             }
         }
