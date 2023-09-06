@@ -1,15 +1,17 @@
 class Solution {
     public int solution(int a, int b) {
-         int answer = Integer.parseInt(Integer.toString(a) + Integer.toString(b));
-        int answer2 = Integer.parseInt(Integer.toString(b) + Integer.toString(a));
-        if (answer > answer2) {
-            return answer;
+        int answer = 0;
+        String sum1 = "";
+        String sum2 = "";
+
+        sum1 = Integer.toString(a) + Integer.toString(b);
+        sum2 = Integer.toString(b) + Integer.toString(a);
+
+        if (Integer.parseInt(sum1) >= Integer.parseInt(sum2)) {
+            answer = Integer.parseInt(sum1);
         } else {
-        return answer2;
+            answer = Integer.parseInt(sum2);
         }
-
-
+        return answer;
     }
 }
-
-
